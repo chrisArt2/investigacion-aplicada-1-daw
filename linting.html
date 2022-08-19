@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Linting</title>
+	<link rel="stylesheet" type="text/css" href="css/linting.css">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="menu">
+		<div class="logo">
+			<a href="index.html">Proyecto de Investigación</a>>
+		</div>
+		<nav class="enlaces">
+			<a href="practicas.html">Buenas prácticas</a>
+			<a href="linting.html">Linting</a>
+			<a href="flecha.html">Funciones flecha</a>
+			<a href="spread.html">Operador spread</a>
+		</nav>
+
+	</div>
+	<header class="contenedor primero">
+		 <h2 class="tt">Que es Linting y <b>ESLint</b></h2>
+	</header>
+
+	<section class="contenedor info">
+		<h2 class="titulo">Linting</h2>
+		<p>Dentro del mundillo del desarrollo de aplicaciones web existen una gran variedad de herramientas web que sirven para, no solamente mejorar la experiencia del usuario final y el rendimiento de tu aplicación/programa en general, sino que tambien para facilitar y mejorar la experiencia de desarrollo en si.
+        <p>Si bien, el tener muchas herramientas a disposicion puede ser algo positivo para la mejora de dichas herramientas, es tambien un problema para muchos developers que estan comenzando en este proceso ya que puede ser confuso el seguir indicaciones que necesitan de cierto grado de conocimiento previo.</p>
+        <p>En el caótico mundo del desarrollo web, necesitamos tener una especie de guía para sobrevivir.</p></p>
+
+		<div class="box-contenedor">
+			<div class="box">
+				<h3>¿Que es?</h3>
+				<p>Es una herramienta de software que revisa y "observa" tu código en busca de errores que puedan afectar tu código. Algunos incluso pueden darte sugerencias de como arreglar el error o incluso arreglarlo ellos mismos.</p>
+			</div>
+			<div class="box">
+				<h3>¿Que arregla?</h3>
+                <br>
+				<p>Errores de sintaxis</p>
+                <p>Código poco intuitivo o dificil de mantener</p>
+                <p>Uso de estilos de codigo inconsistentes</p>
+			</div>
+			<div class="box">
+				<h3>¿Como funcionan?</h3>
+				<p>Estas pertenecen a un grupo de programas conocidos como "herramientas de análisis estático", un proceso de revisión de un programa sin ejecutar dicho programa. Visto de otra forma es como tener a un revisor de tu pull request pero automatizado y observando lo que escribes.</p>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="segundo">
+		<h2 class="titulo">¿Que es ESLint?</h2>
+		<p class="textoESLint">
+            Es una herramienta de codigo abierto que se enfoca en el proceso de "linting" para JavaScript, siendo la herramienta mas dominante para la tarea de "arreglar" código JavaScript, tanto en el lado del servidor (node.js) como en el navegador.
+            Dado que javascript es un lenguaje dinámico y de tipado débil, es especialmente fácil caer en errores a la hora de escribir código. ESLint utiliza un sistema de reglas que permiten definir que es y que no es posible dentro del código.
+        </p>
+        <h2 class="titulo">¿Que puede hacer ESLint por ti?</h2>
+        
+		<div class="box-contenedor">
+			<div class="monito">
+				<div class="boxes">
+				<h3 class="text1">Muestra errores de sintaxis</h3>
+			</div>
+			<div class="boxes">
+				<h3 class="text1">Dar sugerencias para mejorar tu codigo</h3>
+			</div>
+			</div>
+			<div class="boxes2">
+				<h3 class="text1">Mantener un estilo consistente en tu código o reforzar reglas internas de tu propio equipo</h3>
+			</div>
+			<div class="boxes2">
+				<h3 class="text1">Mostrarte errores cuando no se siguen buenas prácticas.</h3>
+			</div>
+		</div>
+	</section >
+
+	<section class="contenedores cambio">
+	
+		
+	</section>
+
+	<section class="contenedor tercero">
+		<article class="contain">
+			<h2 class="titulo">Ejemplo de su uso y como instalarlo en nuestras computadoras</h2>
+			<h2 class="titulo">-->¿Como empezar?<--</h2>
+			<p class="texto3">La manera más simple es tener ya un proyecto JavaScript en el cual utilizaremos ESLint.
+			Empezaremos creando un directorio en el cual almacenaremos el proyecto, y esto lo haremos directamente de la terminal, escribiendo este comando: <u>mkdir linting</u>
+			</p>
+			<p class="texto3">
+				Ahora debemos de ingresar a nuestro directorio para comenzar a trabajar, escribiendo nuevamente un comando muy simple: <u>cd linting</u>, dentro del cual crearemos nuestro archivo JS, siendo este muy simple, y por el cual deberemos de digitar la siguiente linea: <u>touch app.js</u> 
+			</p>
+			<p class="texto3">
+				Dentro de nuestro proyecto, procederemos a agregar un poco de código, abriéndolo en nuestro editor de código de preferencia:
+			</p>
+			<img src="css/img/img3.jpg">
+			<p class="texto3">
+				A simple vista, se denotan muchos errores de formato en este código, además de un problema de sintaxis.
+			</p>
+			<p class="texto3">
+				Ahora iniciaremos el proyecto usando esta línea en la consola de comandos: <u>npm init</u>, el cual creará el archivo package.json, en el cual se describe la configuración del proyecto y la lista de dependencias del mismo.
+			</p>
+			<p class="texto3">
+				Ahora procederemos a configurar ESLint, usando la consola de comando escribiendo: <u>npm install eslint --save-dev</u>.
+			</p>
+			<p class="texto3">
+				Una vez se encuentre instalado, iniciaremos la configuración ejecutando <u>npx eslint --init</u>.
+			</p>
+			<p class="texto3">
+				Los pasos son muy sencillos a partir de aquí, solo debemos de seguir las instrucciones que se nos muestran, hasta llegar al último, el que nos dice <b>"¿Quieres instalar las dependencias ahora con npm?"</b> Selecciona <b>Yes</b>.
+
+				Al terminar este proceso podrás notar que un nuevo archivo fue creado en el directorio raíz del proyecto .eslintrc.json (o . js o .yaml dependiendo de lo seleccionado).
+			</p>
+			<p class="texto3">
+				Finalmente agreguemos algunas reglas simples en el archivo de configuración. Abre el archivo .eslintrc.js (Si elegiste el formato JavaScript) y verás lo siguiente:
+			</p>
+			<img src="css/img/img4.jpg" alt="">
+			<p class="texto3">
+				Ahora, agreguemos una nueva guía al arreglo extends y algunas reglas al objeto rules
+			</p>
+			<img src="css/img/img5.jpg" alt="">
+			<p class="texto3">
+				Aquí agregamos eslint:recommended al arreglo  extends indicando que también usaremos las reglas recomendadas de ESLint. Además, agregamos dos nuevas reglas en el objeto rules indicando que utilizar punto y coma semi al final de cada línea de código es requerido y que se usaran comillas dobles en los strings.
+			</p>
+		</article>
+		
+		<footer>
+			<p class="texto3">
+				<h3>Bibliografía</h3>
+				Hernandez M. (2021)
+				<b>¿Qué es Linting y ESLint? ¿Cómo empezar?</b>.
+				<b>freeCodeCamp</b>
+				<a href="https://www.freecodecamp.org/espanol/news/que-es-linting-y-eslint/">Enlace al sitio</a>
+			</p>
+			
+		</footer>
+		
+	</section>
+</body>
+</html>
