@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Investigación</title>
+	<link rel="stylesheet" type="text/css" href="css/styleFlecha.css">
+</head>
+<body>
+	<div class="menu">
+		<div class="logo">
+			<a href="index.html">Proyecto de Investigación</a>>
+		</div>
+		<nav class="enlaces">
+			<a href="practicas.html">Buenas prácticas</a>
+			<a href="linting.html">Linting</a>
+			<a href="flecha.html">Funciones flecha</a>
+			<a href="ejemploSpread.html">Operador spread</a>
+		</nav>
+
+	</div>
+	<header class="contenedor primero">
+		 <h2 class="tt">Funciones flecha</h2>
+	</header>
+
+	<section class="contenedor info">
+		<!--<h2 class="titulo">Buenas prácticas de edición de código en JS</h2>-->
+		<p class="p">Estas funciones son una alternativa simplificada de declarar los <b>métodos</b> o  <b>funciones</b> que normalmente usamos;
+			no obstante, tiene una utilidad limitada.</p>
+
+		<div class="box-contenedor">
+			<div class="box">
+				<h3>Se caracteriza por:</h3>
+				<p>Se caracterizan por la utilización del símbolo <b>"Flecha" ( <i>=></i> )</b></p>
+			</div>
+			<div class="box">
+				<h3>¿Cómo funciona?</h3>
+				<p>Esta función evalúa los parámetros a la izquierda de <b><i>=></i></b>  y devuelve la expresión a su derecha.</p>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="contenedor segundo">
+		<h2 class="titulo">Principales limitaciones</h2>
+			<p class="p">Esta función, como se mencionó anteriormente tiene ciertas limitaciones, las cuales pueden 
+				poner en aprietos si no lo tomamos en cuenta.</p>
+		
+		<div class="box-contenedor opc">
+			<div class="box lok">
+				<h3>No se puede usar como un <b>Método</b>.</h3>
+			</div>
+			<div class="box lok">
+				<h3>No tiene enlaces o referencias a <b>this</b> o <b>super</b>.</h3>
+			</div>
+			<div class="box lok">
+				<h3>No contiene <b>arguments</b>, ni palabras clave <b>new.target</b></h3>
+			</div>
+			<div class="box lok">
+				<h3>No está disponible para métodos <b>call</b>, <b>apply</b> y <b>bind</b> que necesitan una referencia establecida.</h3>
+			</div>
+			<div class="box lok">
+				<h3>Tampoco puede funcionar o ser utilizado como un <b>constructor</b></h3>
+			</div>
+			<div class="box lok">
+				<h3>Ni mucho menos con <b>yield</b>, usado para pausar y reanudar funciones generadoras.</h3>
+			</div>
+			
+		</div>
+
+	</section >
+
+	<section class="contenedor cambio">
+	
+		
+	</section>
+
+	<section class="contenedor tercero">
+		<article class="contain">
+			<h2 class="titulo">Cómo se estructura una función Flecha</h2>
+			<h3 class="titulo ok">1. La visualizamos como una función tradicional.</h3>
+			
+
+			<div class="box-contenedor">
+				<div class="box">
+					<h3></h3>
+					<p><img src="img/funcionF1.png" alt="Estructurar función flecha"></p>				
+			</div>
+		</article>
+		<article class="contain">
+			<h3 class="titulo ok">2. Ahora, desglosamos esta función: </h3>
+			<p class="pa">A. Se elimina la palabra <b>fuction</b>, el <b>identificador</b> y se coloca una flecha <b>(=>)</b> entre el argumento "<b>( x )</b>" y la llave inicial (<b> { </b>):</h4>
+			
+
+			<div class="box-contenedor">
+				<div class="box">
+					<h3></h3>
+					<p><img src="img/funcionF2.png" alt="Estructurar función flecha"></p>				
+			</div>
+		</article>
+		<article class="contain">
+			<p class="pa">B. Se suprimen las llaves (<b> { } </b>) y la palabra "<b>return</b>", pues esta última queda <b>implícita</b>:</h4>
+			
+
+			<div class="box-contenedor">
+				<div class="box">
+					<h3></h3>
+					<p><img src="img/funcionF21.png" alt="Estructurar función flecha"></p>				
+			</div>
+		</article>
+
+		<article class="contain">
+			<p class="pa">C. Si solo se cuenta con un argumento, se eliminan los <b>paréntesis</b>, si se contara con varios se mantendrían:</h4>
+			
+
+			<div class="box-contenedor">
+				<div class="box">
+					<h3></h3>
+					<p><img src="img/funcionF22.png" alt="Estructurar función flecha"></p>				
+			</div>
+		</article>
+		
+		<article class="contain">
+			<h2 class="titulo">Función flecha con varias líneas.</h2>
+			<p class="p">Cuando se necesita formular un procedimiento con distintas sentencias, 
+				con la función Flecha, se debe expresar dentro de llaves (<b> { } </b>) y dejar 
+				explícitamente el uso de "<b>return</b>" para indicar que se devolverá un valor.
+			</p>
+			
+
+			<div class="box-contenedor">
+				<div class="box">
+					<h3>Función Común</h3>
+					<p><img src="img/funcionC.png" alt="Función Común Ejemplo"></p>
+				</div>
+				<div class="box jo">
+					<h3>Función Flecha</h3>
+					<p><img src="img/funcionF.png" alt="Función Flecha Ejemplo"></p>
+				</div>
+			</div>
+		</article>
+		
+	</section>
+</body>
+</html>
