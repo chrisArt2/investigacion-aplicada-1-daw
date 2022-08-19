@@ -256,3 +256,21 @@ h2{
 .ok{
 	font-size: 2.22em;
 }
+
+footer .foot{
+	width: 80%;
+	text-align: start;
+	color: #1f1d1d;
+	margin: 4% auto;
+	font-size: 1.1em;
+}
+
+footer .foot a{
+	color: rgb(4, 196, 255);	
+	width: 70%;
+}
+
+footer .foot a:hover{
+	color: #9c27b0;
+	cursor: pointer;
+}
