@@ -40,7 +40,7 @@ body {
 .contenedor-imc__header {
     font-size: 13px;
     display: inline-block;
-    position: absolute;
+    position: relative;
     text-align: center;
     background-color: rgb(148, 148, 148);
     border: 1px solid black;
