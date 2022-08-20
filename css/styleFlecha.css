@@ -278,6 +278,7 @@ footer .foot a:hover{
 .cambio2{
 	background: url(img/img-cambio.jpg) no-repeat center;
 	height: 40vh;
+	width: 100%;
 }
 
 .tituloBli{
