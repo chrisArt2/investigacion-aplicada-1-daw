@@ -11,6 +11,7 @@ body {
     display: flex;
     align-items:center;
     border: 2px solid black;
+    position: relative;
 }
 
 .contenedor-imc__box {
@@ -40,7 +41,7 @@ body {
 .contenedor-imc__header {
     font-size: 13px;
     display: inline-block;
-    position: relative;
+    position: absolute;
     text-align: center;
     background-color: rgb(148, 148, 148);
     border: 1px solid black;
