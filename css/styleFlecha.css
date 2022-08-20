@@ -274,3 +274,16 @@ footer .foot a:hover{
 	color: #9c27b0;
 	cursor: pointer;
 }
+
+.cambio2{
+	background: url(img/img-cambio.jpg) no-repeat center;
+	height: 40vh;
+}
+
+.tituloBli{
+	margin-bottom: 40px;
+	font-size: 80px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: white;
+}
