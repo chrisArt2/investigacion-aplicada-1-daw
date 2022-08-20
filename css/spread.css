@@ -169,3 +169,32 @@ input[value="probar"]:hover{
 	border-top: 1px solid black;
 	margin-top: 15px;
 }
+
+.cambio2{
+	background: url(img/img-cambio.jpg) no-repeat center;
+	height: 40vh;
+}
+
+.tituloBli{
+	margin-bottom: 40px;
+	font-size: 80px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: white;
+}
+
+.biblio{
+	color: #000;
+	font-size: 20px;
+}
+
+.biblio a{
+	text-decoration: none;
+}
+
+.biblio a:hover{
+	background-color: #9c27b0;
+	padding: 2px;
+	border-radius: 20px;
+	color: white;
+}
